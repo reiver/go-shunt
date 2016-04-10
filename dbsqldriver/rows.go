@@ -69,7 +69,7 @@ func (rows *internalRows) Next(dest []driver.Value) error {
 
 	iterator := rows.iterator
 	if nil == iterator {
-		return nil, errNilIterator
+		return errNilIterator
 	}
 
 
