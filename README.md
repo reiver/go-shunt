@@ -20,7 +20,7 @@ import (
 
 // ...
 
-rows, err db.Query(query)
+rows, err := db.Query(query)
 if nil != err {
 	return err
 }
