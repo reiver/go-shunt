@@ -65,7 +65,7 @@ func Rows(iterator Iterator) (*sql.Rows, error) {
 //      rows := refs.MustRows(iterator) // This could panic()!
 func MustRows(iterator Iterator) *sql.Rows {
 	rows, err := Rows(iterator)
-	if nil != rows {
+	if nil != err {
 		panic(err)
 	}
 
